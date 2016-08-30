@@ -1,0 +1,33 @@
+@import "https://fonts.googleapis.com/css?family=Arvo|Covered+By+Your+Grace";
+.landing {
+  background: url("../img/skater.jpg") no-repeat;
+  margin-top: -12px;
+  background-size: 100%;
+  height: 100vh; }
+
+.nav-menu {
+  text-align: center; }
+
+.nav-items {
+  list-style: none; }
+  .nav-items a {
+    text-decoration: none;
+    color: #D9CCA5;
+    font-family: "Arvo"; }
+  .nav-items a:hover {
+    color: #A48F76;
+    font-size: 24px;
+    transition: .5s ease; }
+
+.quote {
+  position: absolute;
+  top: 515px;
+  left: 262px;
+  font-family: "Covered By Your Grace";
+  color: #BF4434; }
+
+.about {
+  color: #BF4434;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

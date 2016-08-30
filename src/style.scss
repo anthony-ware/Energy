@@ -1,0 +1,63 @@
+@import 'https://fonts.googleapis.com/css?family=Arvo|Covered+By+Your+Grace';
+//****FONTS****//
+
+$baseFont:'Arvo';
+$titleFont:'Covered By Your Grace';
+
+//****COLORS****//
+
+$linkColor:#D9CCA5;
+$aboutTextColor:#BF4434;
+$aboutColor:#A48F76;
+$titleColor:#002125;
+$contentColor:#BF4434;
+
+
+
+.landing{
+	background:url("../img/skater.jpg") no-repeat;
+	margin-top:-12px;
+	background-size:100%;
+	height:100vh;
+
+}
+//****NAV MENU****//
+.nav-menu{
+	text-align:center;
+
+}
+
+.nav-items{
+	list-style:none;
+
+
+
+	a{
+		text-decoration: none;
+		color:$linkColor;
+		font-family:$baseFont;
+	}
+
+	a:hover{
+		color:$aboutColor;
+		font-size: 24px;
+		transition: .5s ease;
+	}
+}
+
+//****LANDING PAGE****//
+
+.quote{
+position:absolute;
+top: 515px;
+left: 262px;
+font-family:$titleFont;
+color:$contentColor;
+}
+
+.about{
+
+	color:$aboutTextColor;
+	text-align:center;
+
+}
