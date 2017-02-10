@@ -1,0 +1,289 @@
+body {
+  background: url(../img/bg-texture.png) top left repeat; }
+  body a {
+    font-family: Covered By Your Grace;
+    font-size: 20px;
+    transition: color 0.4s ease;
+    color: white; }
+  body a:hover {
+    color: orange; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: Arvo; }
+
+.top-bar {
+  background: #0a0a0a;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10; }
+  .top-bar ul {
+    color: white;
+    background: none; }
+    .top-bar ul a {
+      color: white;
+      transition: color 0.4s ease; }
+    .top-bar ul a:hover {
+      color: orange; }
+
+#hero {
+  background: url(../img/skater2.jpg) 50% 27% fixed no-repeat;
+  min-height: 600px;
+  padding: 40px 0;
+  width: 100%; }
+  #hero .hero-text {
+    margin-top: 93px;
+    color: orange; }
+    #hero .hero-text h1 {
+      font-family: Arvo; }
+    #hero .hero-text p {
+      padding-top: 40px;
+      font-family: Arvo; }
+    #hero .hero-text button {
+      font-family: Covered By Your Grace;
+      font-size: 20px;
+      background-color: transparent; }
+    #hero .hero-text a {
+      color: white;
+      transition: color 0.4s ease; }
+    #hero .hero-text a:hover {
+      color: orange; }
+
+#modal {
+  position: fixed;
+  z-index: 455;
+  padding: 10px; }
+  #modal .form-content {
+    text-align: center;
+    border: 1px solid black;
+    background: #fff; }
+    #modal .form-content label {
+      display: block;
+      text-align: left; }
+    #modal .form-content input {
+      display: block;
+      border: 1px solid black; }
+      #modal .form-content input label {
+        display: inline-block; }
+  #modal .login {
+    display: inline-block; }
+    #modal .login .name,
+    #modal .login .password {
+      min-width: 285px; }
+    #modal .login input {
+      display: inline-block; }
+    #modal .login a {
+      display: block;
+      text-decoration: none;
+      color: blue;
+      transition: color .5s ease-in-out; }
+    #modal .login a:hover {
+      color: aliceblue; }
+    #modal .login .button {
+      padding-left: 89px;
+      padding-right: 89px;
+      border: 1px solid black;
+      margin-top: 10px;
+      background: #2ba6cb;
+      color: white;
+      transition: color .4s ease-in-out; }
+    #modal .login .button:hover {
+      background: green;
+      color: orange; }
+    #modal .login button {
+      display: block;
+      font-family: Covered By Your Grace;
+      font-size: 20px;
+      background: #2ba6cb;
+      min-width: 285px;
+      padding-right: 110px;
+      padding-left: 110px;
+      transition: background .4s ease-in-out; }
+  #modal .show-password {
+    display: block; }
+    #modal .show-password label,
+    #modal .show-password input {
+      display: inline-flex; }
+  #modal .forgot-link {
+    background: transparent;
+    color: blue;
+    display: inline; }
+
+#about {
+  min-width: 100%;
+  position: relative;
+  background: url(../img/sunset.jpg) 20% 59% fixed no-repeat;
+  min-height: 500px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black; }
+  #about .about-banner {
+    text-align: center; }
+  #about .story {
+    text-align: left;
+    background: lightblue;
+    padding: 50px;
+    background: url(../img/brushed.png);
+    filter: blur(2px); }
+    #about .story h1 {
+      font-family: Covered By Your Grace; }
+    #about .story p {
+      font-family: Arvo; }
+  #about .story:hover {
+    filter: blur(0); }
+
+#products {
+  position: relative;
+  min-width: 100%; }
+  #products .clothing,
+  #products .sports,
+  #products .drinks,
+  #products .misc {
+    display: flex;
+    border: 1px solid black;
+    min-height: 527px;
+    padding: 0;
+    transition: opacity 0.4s ease; }
+    #products .clothing a,
+    #products .sports a,
+    #products .drinks a,
+    #products .misc a {
+      color: white;
+      transition: color 0.4s ease; }
+    #products .clothing a:hover,
+    #products .sports a:hover,
+    #products .drinks a:hover,
+    #products .misc a:hover {
+      color: orange; }
+    #products .clothing .overlay,
+    #products .sports .overlay,
+    #products .drinks .overlay,
+    #products .misc .overlay {
+      visibility: hidden;
+      text-align: center;
+      margin-top: 50%; }
+  #products .clothing {
+    background: url(../img/style.jpg) no-repeat;
+    background-size: 100% 100%; }
+  #products .sports {
+    background: url(../img/surf.jpg) no-repeat;
+    background-size: 100% 100%; }
+  #products .drinks {
+    background: url(../img/drinks.jpg) no-repeat;
+    background-size: 100% 100%; }
+  #products .misc {
+    background: url(../img/misc.jpg) no-repeat;
+    background-size: 100% 100%; }
+  #products .clothing:hover {
+    background: url(../img/style.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8; }
+  #products .sports:hover {
+    background: url(../img/surf.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8; }
+  #products .drinks:hover {
+    background: url(../img/drinks.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8; }
+  #products .misc:hover {
+    background: url(../img/misc.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8; }
+  #products .clothing:hover,
+  #products .sports:hover,
+  #products .drinks:hover,
+  #products .misc:hover {
+    filter: blur(0.5px); }
+    #products .clothing:hover .overlay,
+    #products .sports:hover .overlay,
+    #products .drinks:hover .overlay,
+    #products .misc:hover .overlay {
+      visibility: visible;
+      text-align: center;
+      color: red; }
+  #products .overlay {
+    width: 100%; }
+
+.row {
+  max-width: 1200px; }
+
+.footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+  margin-top: 526px; }
+  .footer .inline-list a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 3px 0 0; }
+  .footer .contact {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    color: #fff; }
+    .footer .contact li {
+      margin-bottom: 2rem; }
+      .footer .contact li p {
+        padding-left: 5rem; }
+    .footer .contact i {
+      position: absolute;
+      background-color: #33383b;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 50%;
+      line-height: 1;
+      margin: 0 0 0 -4rem;
+      vertical-align: middle;
+      padding: .25em .45em; }
+  .footer .copywrite {
+    color: #8f9296;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0; }
+  .footer .about {
+    color: #92999f;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0; }
+  .footer .footer-links a {
+    list-style: none;
+    font-weight: normal;
+    color: #fff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    transition: color 0.4s ease; }
+    .footer .footer-links a::after {
+      content: " ";
+      padding: 0 0.2rem 0 0.4rem; }
+    .footer .footer-links a:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem; }
+  .footer a:hover {
+    color: orange; }
+  @media only screen and (min-width: 40.063em) {
+    .footer p {
+      text-align: left; }
+    .footer .social {
+      text-align: left;
+      margin: 0; }
+    .footer .contact {
+      text-align: left; }
+      .footer .contact > i {
+        margin-right: 1rem; } }
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem; }
+  .logo i {
+    margin-right: 0.5rem; }
+
+/*# sourceMappingURL=app.css.map */

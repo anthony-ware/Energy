@@ -1,0 +1,416 @@
+// GLOBAL
+
+body{
+	background: url(../img/bg-texture.png) top left repeat;
+	a{
+		font-family: Covered By Your Grace;
+		font-size: 20px;
+		transition: color 0.4s ease;
+		color:white;
+	}
+	a:hover{
+		color:orange;
+	}
+	
+	h1,h2,h3,h4,h5{
+		font-family: Arvo;
+	}
+
+}
+//NAVIGATION
+
+.top-bar{
+	background:#0a0a0a;
+	color:white;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:10;
+
+	ul{
+	color:white;
+	background:none;
+
+		a{
+		color: white;
+		transition: color 0.4s ease;
+		}
+		a:hover{color:orange;}
+	}
+
+}
+
+//HERO
+
+#hero{
+	background: url(../img/skater2.jpg) 50% 27% fixed no-repeat;
+	min-height:600px;
+	padding:40px 0;
+	width:100%;
+
+	.hero-text{
+		margin-top: 93px;
+		color:orange;
+		h1{
+			font-family: Arvo;
+		}
+
+		p{
+		padding-top: 40px;
+		font-family: Arvo;
+		}
+		button{
+		font-family:Covered By Your Grace;
+		font-size: 20px;
+		background-color:transparent;
+		}
+		a{
+		color: white;
+		transition: color 0.4s ease;
+		}
+		a:hover{
+		color:orange;
+		}
+	}
+	
+}
+
+//MODAL
+#modal{
+	// display:none;
+	position:fixed;
+	z-index:455;
+	padding:10px;
+	.form-content{
+		text-align: center;
+		border:1px solid black;
+		background:#fff;
+		label{
+			display: block;
+			text-align: left;
+		}
+		input{
+			display: block;
+			border:1px solid black;
+			label{display: inline-block;}
+		}
+	}
+	.login{
+		display: inline-block;
+		.name,
+		.password{
+			min-width:285px;
+		}
+		input{
+			display: inline-block;
+		}
+
+		a{
+			display: block;
+			text-decoration: none;
+			color: blue;
+			transition: color .5s ease-in-out;
+		}
+		a:hover{
+			color: aliceblue;
+		}
+
+		.button{
+			padding-left:89px;
+			padding-right:89px;
+			border:1px solid black;
+			margin-top:10px;
+			background:#2ba6cb;
+			color: white;
+			transition:color .4s ease-in-out;
+			
+		}
+		.button:hover{
+			background:green;
+			color: orange;
+		}
+		button{
+			display: block;
+			font-family:Covered By Your Grace;
+			font-size: 20px;
+			background:#2ba6cb;
+			min-width: 285px;
+			padding-right:110px;
+			padding-left:110px;
+			transition: background .4s ease-in-out;
+	
+		
+		}
+		
+
+	}
+
+	.show-password{
+		display: block;
+		label,
+		input{
+			display: inline-flex;
+		}
+	}
+	.forgot-link{
+		background:transparent;
+		color: blue;
+		display: inline;
+		}
+
+}
+
+//ABOUT SECTION
+#about{
+	min-width:100%;
+	position:relative;
+	background:url(../img/sunset.jpg) 20% 59% fixed no-repeat;
+	min-height:500px;
+	border-bottom:1px solid black;
+	border-top:1px solid black;
+
+	.about-banner{
+		text-align: center;
+	}
+
+	.story{
+		text-align: left;
+		background: lightblue;
+		padding:50px;
+		background:url(../img/brushed.png);
+		filter: blur(2px);
+
+		h1{
+			font-family: Covered By Your Grace;
+		}
+		p{
+			font-family: Arvo;
+		}
+	}
+	.story:hover{
+		filter:blur(0);
+	}
+	
+}
+
+
+//PRODUCTS
+
+#products{
+	position: relative;
+	min-width:100%;
+	// background: fixed;
+	.clothing,
+	.sports,
+	.drinks,
+	.misc{
+		display: flex;
+		border:1px solid black;
+		min-height: 527px;
+		
+		padding:0;
+		transition: opacity 0.4s ease;
+
+		
+		a{
+		color: white;
+		transition: color 0.4s ease;
+		}
+		a:hover{
+		color:orange;
+		}
+		.overlay{
+			visibility:hidden;
+			text-align:center;
+			margin-top: 50%;
+			
+
+
+		}
+		
+		
+	}
+	.clothing {
+		background:url(../img/style.jpg) no-repeat;
+		background-size:100% 100%;
+
+	}
+	.sports{
+		background:url(../img/surf.jpg) no-repeat;
+		background-size:100% 100%;
+	}
+	.drinks{
+		background:url(../img/drinks.jpg) no-repeat;
+		background-size:100% 100%;
+
+	}
+	.misc{
+		background:url(../img/misc.jpg) no-repeat;
+		background-size:100% 100%;
+	}
+//PRODUCT HOVER EFFECTS
+	.clothing:hover{
+		background:url(../img/style.jpg) no-repeat;
+		background-size:100% 100%;
+		opacity:0.8;
+	}
+	.sports:hover{
+		background:url(../img/surf.jpg)  no-repeat;
+		background-size:100% 100%;
+		opacity: 0.8;
+	}
+	.drinks:hover{
+		background:url(../img/drinks.jpg) no-repeat;
+		background-size:100% 100%;
+		opacity: 0.8;
+	}
+	.misc:hover{
+		background: url(../img/misc.jpg) no-repeat;
+		background-size:100% 100%;
+		opacity: 0.8;
+	}
+
+	.clothing:hover,
+	.sports:hover,
+	.drinks:hover,
+	.misc:hover{
+		filter: blur(0.5px);
+
+		.overlay{
+			visibility: visible;
+			text-align: center;
+			color:red;
+
+		}
+
+		// 
+	}
+	.overlay{
+		width: 100%;
+
+	}
+}
+
+
+//FOOTER
+
+.row {
+  max-width: 1200px;
+}
+
+.footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+  margin-top: 526px;
+
+
+  
+  .inline-list a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 3px 0 0;
+  }
+  
+  .contact {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    
+    li {
+      margin-bottom: 2rem;
+      
+      p {
+        padding-left: 5rem;
+      }
+    }
+    
+    i {
+      position: absolute;
+      background-color: #33383b;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 50%;
+      line-height: 1;
+      margin: 0 0 0 -4rem;
+      vertical-align: middle;
+      padding: .25em .45em;
+    }
+  }
+  
+  .copywrite {
+    color: #8f9296;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .about {
+    color: #92999f;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer-links a {
+    list-style: none;
+    font-weight: normal;
+    color: #fff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    font-size: 20px;
+	color: white;
+	transition: color 0.4s ease;
+	
+    
+    &::after {
+      content: " ";
+      padding: 0 0.2rem 0 0.4rem;
+    }
+    
+    &:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+  }
+  a:hover{
+		color:orange;
+		}
+  @media only screen and (min-width: 40.063em) {
+    
+    p {
+      text-align: left;
+    }
+    
+    .social {
+      text-align: left;
+      margin: 0;
+      
+    }
+    
+    .contact {
+      text-align: left;
+      > i {
+        margin-right: 1rem;
+      }
+    }
+    
+  }
+}
+   
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  
+  i {
+    margin-right: 0.5rem;
+  }
+}

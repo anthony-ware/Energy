@@ -1,63 +1,134 @@
-@import 'https://fonts.googleapis.com/css?family=Arvo|Covered+By+Your+Grace';
-//****FONTS****//
-
-$baseFont:'Arvo';
-$titleFont:'Covered By Your Grace';
-
-//****COLORS****//
-
-$linkColor:#D9CCA5;
-$aboutTextColor:#BF4434;
-$aboutColor:#A48F76;
-$titleColor:#002125;
-$contentColor:#BF4434;
-
-
-
-.landing{
-	background:url("../img/skater.jpg") no-repeat;
-	margin-top:-12px;
-	background-size:100%;
-	height:100vh;
+//***GLOBAL STYLES***\\
+body{
+	background: url(../img/bg-texture.png) top left repeat;
+	a{
+		font-family: Covered By Your Grace;
+		font-size: 20px;
+		transition: color 0.4s ease;
+		color:white;
+	}
+	
+	h1,h2,h3,h4,h5{
+		font-family: Arvo;
+	}
 
 }
-//****NAV MENU****//
-.nav-menu{
-	text-align:center;
+//NAVIGATION//
+.top-bar{
+	background:#0a0a0a;
+	color:white;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:10;
 
-}
-
-.nav-items{
-	list-style:none;
-
+	ul{
+	color:white;
+	background:none;
 
 
 	a{
+		color: white;
+		transition: color 0.4s ease;
+	}
+	a:hover{color:orange;}
+	}
+
+	//LINK TAGS
+	a{
 		text-decoration: none;
-		color:$linkColor;
-		font-family:$baseFont;
 	}
 
 	a:hover{
-		color:$aboutColor;
-		font-size: 24px;
-		transition: .5s ease;
+		color:purple;
 	}
 }
 
-//****LANDING PAGE****//
 
-.quote{
-position:absolute;
-top: 515px;
-left: 262px;
-font-family:$titleFont;
-color:$contentColor;
+.site-body{
+	border:1px solid red;
+	margin-left:45px;
+	margin-right:45px;
+	position:absolute;
+	//***BODY NAVIGATION***\\
+	.blog-nav{
+		border-bottom:1px solid black;
+		background:rgba(233,233,233,0.4);
+		ul{
+		list-style: none;
+		
+		}
+
+
+	
+	li{
+		text-align: right;
+		display: inline-block;
+		border-right:1px solid black;
+		padding:10px;
+
+
+	}
+}
+	//LINK TAGS
+	
+	a{
+		text-decoration: none;
+
+	}
+	caption{
+		position:absolute;
+		bottom:0;
+	}
+
+	//MAIN CONTENT
+
+	.main-content{
+		img{
+			max-width:100%;
+		}
+	}
+
+	//SIDE CONTENT
+
+	.side-content{
+		border-left:1px solid black;
+
+		.subscribe{
+			border-bottom:1px solid black;
+		}
+
+		.subscribe-banner{
+			border-bottom:1px solid black;
+			background:grey;
+		}
+
+		.facebook-icon{
+			border-bottom:1px solid black;
+			padding-top:10px;
+			text-align: left;
+		}
+
+		.twitter-icon{
+			border-bottom:1px solid black;
+			padding-top:10px;
+		}
+
+		.google-icon{
+			border-bottom:1px solid black;
+			padding-top:10px;
+		}
+		p{
+			padding:none;
+			text-align: right;
+		}
+
+		img{
+			padding:none;
+		}
+
+	}
+	
 }
 
-.about{
-
-	color:$aboutTextColor;
-	text-align:center;
-
-}

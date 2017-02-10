@@ -1,33 +1,77 @@
-@import "https://fonts.googleapis.com/css?family=Arvo|Covered+By+Your+Grace";
-.landing {
-  background: url("../img/skater.jpg") no-repeat;
-  margin-top: -12px;
-  background-size: 100%;
-  height: 100vh; }
+body {
+  background: url(../img/bg-texture.png) top left repeat; }
+  body a {
+    font-family: Covered By Your Grace;
+    font-size: 20px;
+    transition: color 0.4s ease;
+    color: white; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: Arvo; }
 
-.nav-menu {
-  text-align: center; }
+.top-bar {
+  background: #0a0a0a;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10; }
+  .top-bar ul {
+    color: white;
+    background: none; }
+    .top-bar ul a {
+      color: white;
+      transition: color 0.4s ease; }
+    .top-bar ul a:hover {
+      color: orange; }
+  .top-bar a {
+    text-decoration: none; }
+  .top-bar a:hover {
+    color: purple; }
 
-.nav-items {
-  list-style: none; }
-  .nav-items a {
-    text-decoration: none;
-    color: #D9CCA5;
-    font-family: "Arvo"; }
-  .nav-items a:hover {
-    color: #A48F76;
-    font-size: 24px;
-    transition: .5s ease; }
-
-.quote {
-  position: absolute;
-  top: 515px;
-  left: 262px;
-  font-family: "Covered By Your Grace";
-  color: #BF4434; }
-
-.about {
-  color: #BF4434;
-  text-align: center; }
+.site-body {
+  border: 1px solid red;
+  margin-left: 45px;
+  margin-right: 45px;
+  position: absolute; }
+  .site-body .blog-nav {
+    border-bottom: 1px solid black;
+    background: rgba(233, 233, 233, 0.4); }
+    .site-body .blog-nav ul {
+      list-style: none; }
+    .site-body .blog-nav li {
+      text-align: right;
+      display: inline-block;
+      border-right: 1px solid black;
+      padding: 10px; }
+  .site-body a {
+    text-decoration: none; }
+  .site-body caption {
+    position: absolute;
+    bottom: 0; }
+  .site-body .main-content img {
+    max-width: 100%; }
+  .site-body .side-content {
+    border-left: 1px solid black; }
+    .site-body .side-content .subscribe {
+      border-bottom: 1px solid black; }
+    .site-body .side-content .subscribe-banner {
+      border-bottom: 1px solid black;
+      background: grey; }
+    .site-body .side-content .facebook-icon {
+      border-bottom: 1px solid black;
+      padding-top: 10px;
+      text-align: left; }
+    .site-body .side-content .twitter-icon {
+      border-bottom: 1px solid black;
+      padding-top: 10px; }
+    .site-body .side-content .google-icon {
+      border-bottom: 1px solid black;
+      padding-top: 10px; }
+    .site-body .side-content p {
+      padding: none;
+      text-align: right; }
+    .site-body .side-content img {
+      padding: none; }
 
 /*# sourceMappingURL=style.css.map */
